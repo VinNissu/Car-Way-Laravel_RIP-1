@@ -1,0 +1,387 @@
+
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+	font-family: 'Lexend Deca', sans-serif;
+}
+
+/* CSS FEED  */
+.posicaodocabecario{
+	position:fixed;
+	top:0;
+	z-index: 1000;
+}
+.cssDoCabecario{
+    box-shadow: 1px 1px 25px rgba(51, 12, 160, 0.876) ;
+		border-bottom-right-radius: 15px;
+		border-bottom-left-radius: 15px;
+}
+.shadowimg{
+	box-shadow: 1px 2px 100px rgba(62, 9, 187, 0.678);  
+}
+.bordardaimg{
+	border-bottom-left-radius: 30px;
+	border-top-right-radius: 30px;
+	border-top-left-radius: 5px;
+	border-bottom-right-radius:5px;
+}
+.imagemdofeed{
+	border-radius: 50px;
+	width: 90%;
+}
+.imagemdousuario{
+	max-width: 100%;
+	width: 150px;
+}
+.imagemdogrupo{
+	max-width: 100%;
+}
+.shadowsection{
+	box-shadow: 1px 1px 10px rgb(0, 0, 0);  
+}
+.buttonconfig{
+	border-radius: 10px;
+}
+.borderadius{
+	border-radius: 10px;
+}
+.blocoenviarfoto{
+	position: fixed;
+	right: 40px;
+	bottom:25px;
+	display: block;
+	background-color: rgba(240, 248, 255, 0);
+	border-radius: 50px;
+	z-index: 1000;
+}
+.blocoenviarfoto{
+	position: fixed;
+	right: 40px;
+	bottom:25px;
+	display: block;
+	background-color: rgba(240, 248, 255, 0);
+	border-radius: 50px;
+	z-index: 1000;
+}
+.iconenviarfoto:hover{
+color: rgb(228, 12, 12);
+}
+.iconenviarfoto{
+	font-size: 80px;
+	color: rgb(0, 0, 0);
+}
+.iconehamburguer{
+	width: 12%;
+	color: black;
+}
+.usuarioindex{
+	z-index: 0;
+}
+
+@media only screen and (max-width: 992px){
+main{
+		width: 100%;
+		flex-direction: column-reverse;
+		justify-content: left;		
+}
+.bordamobile{
+	border-radius: 15px;
+}
+
+}
+
+
+/* CSS-LOGIN */
+
+main{
+	display: flex;
+}
+:root{
+	--white:#FFF;
+	--whitesmoke: #f9f9f9;
+	--light-grey: #ECECEC;
+	--grey: #c4c4c4;
+	--medium-grey: #a7a7a7;
+	--deep-grey: #343434;
+	--black: #000000;
+	--blue: #1b77f3;
+	--red: #cf3c3f;
+}
+.wrapper{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.login{
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	max-width: 500px;
+	min-height: 100vh;
+	padding: clamp(35px, 8%, 70px);
+	background-color: #570ad3;
+
+}
+.login__logo{
+	width: 130px;
+	margin-bottom: 80px;
+}
+.login__title{
+	color: var(--white);
+	font-size: 1.5em;
+	margin-bottom: 30px;
+}
+.login__label{
+	display: block;
+	width: 100%;
+	margin-bottom: 20px;
+}
+.input{
+	width: 100%;
+	background-color: var(--light-grey);
+	border: 2px solid rgba(0,0,0,0);
+	border-radius: 5px;
+	outline:none;
+	font-size: 0.9em;
+	padding: 25px 10px 10px;
+	font-weight: 600;
+	color: var(--deep-grey);
+
+}
+.login__label span{
+	position: absolute;
+	font-size: 0.8em;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: var(--medium-grey);
+	margin: 20px;
+	cursor: text;
+	transition: all 200ms ease;
+}
+.input:focus{
+	background-color: var(--white);
+	border: 2px solid var(--deep-grey); 
+} 
+.login__label .span-active{
+	font-size: 0.7em;
+	margin: 8px 10px;
+}
+.login__icons{
+	display: flex;
+	gap: 10px;
+	width: 100%;
+	margin-top: 20px;
+}
+.login__icons img{
+	width: 20px;
+}
+.icons__button{
+	width: 33.33%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 35px;
+	border-radius: 25px;
+	cursor: pointer;
+	border: none;
+}
+.login__icons .icons__button:nth-child(1){
+	background-color: var(--light-grey);
+}
+.login__icons .icons__button:nth-child(2){
+	background-color: var(--light-grey);
+}
+.login__icons .icons__button:nth-child(3){
+	background-color: var(--light-grey);
+}
+.login__label--checkbox{
+	width: 100%;
+	margin-top: 15px 0 50px;
+	font-size: 0.9em;
+	font-weight: 500;
+	display: flex;
+	align-items: center;
+	justify-content: center; 
+}
+.input--checkbox{
+	appearance: none;
+	width: 15px;
+	height: 15px;
+	background-color: var(--light-grey);
+	margin-right: 8px;
+	border-radius: 5px;
+}
+.input--checkbox:checked{
+	background-color: #cf3c3f;
+}
+.input--checkbox:checked::after{
+	content: "";
+	display: block;
+	width: 5px;
+	height: 10px;
+	border: 3px solid white;
+	border-width: 0 3px 3px 0;
+	transform: rotate(45deg);
+	margin-left: 4px;
+}
+.login__button{
+	width: 70px;
+	height: 70px;
+	padding: 20px;
+	align-items: center;
+	justify-content: center;
+	background-color: #050507;
+	border-radius: 20px;
+	border: none;
+	cursor: pointer;
+	margin-bottom: 60px;
+}
+.login__button svg{
+	color: white;
+}
+.login__button:disabled svg{
+	color: var(--grey)
+}
+.login__button:disabled{
+	cursor: auto;
+	background-color: white;
+	border: 2px solid var(--light-grey)
+}
+.login__link{
+	font-size: 0.8em;
+	text-decoration: none;
+	color: var(--medium-grey);
+	text-transform: uppercase;
+	font-weight: 70;
+	margin-bottom: 5px;
+}
+.wallpaper{
+	width: 100%;
+	background-image: url('../imgs/logo-car-way.png');
+	background-size: cover;
+	background-position: center;
+	flex: 1;
+}
+
+
+/* CSS DA TELA DE UPLOAD */
+
+
+.login__button__enviar{
+	width: 300px;
+	height: 70px;
+	padding: 10px;
+	align-items: center;
+	justify-content: center;
+	background-color: #030303;
+	color: white;
+	border-radius: 20px;
+	border: none;
+	cursor: pointer;
+	margin-bottom: 60px;
+}
+.login__button__enviar:hover{
+	background-color: rgb(253, 253, 253);
+	color: rgb(0, 0, 0);
+	box-shadow: 1px 1px 25px rgba(51, 12, 160, 0.876) ;
+}
+.login__button__enviar__lado_direito{
+	position: fixed;
+	right: 40px;
+	bottom:25px;
+	display: block;
+	width: 70px;
+	height: 70px;
+	padding: 1px;
+	align-items: center;
+	justify-content: center;
+	background-color: #030303;
+	color: white;
+	border-radius: 20px;
+	border: none;
+	cursor: pointer;
+	margin-bottom: 60px;
+	box-shadow: 1px 1px 25px rgba(51, 12, 160, 0.876) ;
+}
+.login__button__enviar__lado_direito:hover{
+	background-color: rgb(253, 253, 253);
+	color: rgb(0, 0, 0);
+}
+
+.login__logo__enviar{
+	width: 130px;
+	margin-bottom: 80px;
+}
+.fotoenviada{
+	width: 200%;
+	margin-left: 50%;
+	margin-top: 10%;
+	max-width: 800px;
+	max-height: 800px;
+	background-size: cover;
+	background-position: center;
+	flex: 1;
+	border-radius: 30px;
+}
+.shadowimg__enviar{
+	box-shadow: 1px 2px 100px rgba(62, 9, 187, 0.678);  
+}
+.texto__de__enviar{
+	position: fixed;
+	margin-left: 30%;
+	margin-top: 1%;
+}
+
+/* CSS DA TELA DA COMUNIDADE */
+
+.imagem__cardbox{
+	border-radius: 15px;
+	max-width: 350px;
+	max-height: 300px;
+	min-width: 200px;
+	min-height: 250px;
+	box-shadow: 1px 1px 25px rgba(51, 12, 160, 0.876) ;
+
+}
+.card__config{
+max-width: 350px;
+max-height: 460px;
+}
+.login__button__voltar__feed{
+	position: fixed;
+	top:0;
+	bottom:0;
+	margin-left: 1%;
+	margin-top: 2%;
+	width: 70px;
+	height: 70px;
+	padding: 1px;
+	align-items: center;
+	justify-content: center;
+	background-color: #080808;
+	color: white;
+	border-radius: 20px;
+	border: none;
+	cursor: pointer;
+	margin-bottom: 60px;
+	z-index: 1000;
+}
+.login__button__voltar__feed:hover{
+	background-color: rgb(253, 253, 253);
+	color: rgb(0, 0, 0);
+	box-shadow: 1px 1px 25px rgba(51, 12, 160, 0.876) ;
+}
+
+.imagem__cardbox:hover{
+	width: 150%;
+	border-radius: 15px;
+	min-width: 200px;
+	min-height: 250px;
+	box-shadow: 1px 1px 100px rgba(206, 17, 17, 0.876) ;
+	cursor: grab;
+	transition: all .5s ease-in-out;
+}
